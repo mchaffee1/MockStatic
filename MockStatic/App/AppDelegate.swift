@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  MockStatic
-//
-//  Created by Michael Chaffee on 10/9/18.
-//  Copyright © 2018 chaf.io. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

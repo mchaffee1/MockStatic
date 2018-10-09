@@ -16,8 +16,10 @@
 		2B328FC5216D0CA5002B7FE2 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B328FC4216D0CA5002B7FE2 /* ViewControllerTests.swift */; };
 		2B328FC9216D0F70002B7FE2 /* StaticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B328FC8216D0F70002B7FE2 /* StaticAPI.swift */; };
 		2B328FCB216D1049002B7FE2 /* StaticAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B328FCA216D1049002B7FE2 /* StaticAPIWrapper.swift */; };
-		2B328FCD216D10AE002B7FE2 /* WrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B328FCC216D10AE002B7FE2 /* WrapperTests.swift */; };
 		2B328FCF216D118C002B7FE2 /* MockStaticAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B328FCE216D118C002B7FE2 /* MockStaticAPIWrapper.swift */; };
+		2B52E06E216D161900DD6E04 /* InjectableAPIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52E06D216D161900DD6E04 /* InjectableAPIWrapper.swift */; };
+		2B52E070216D16F100DD6E04 /* MockStaticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */; };
+		2B52E072216D185200DD6E04 /* InjectableAPIWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52E071216D185200DD6E04 /* InjectableAPIWrapperTests.swift */; };
 		8C3AB078DAE49B0AD8FE7670 /* Pods_MockStaticUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE5D081AEE199C73DE735D9 /* Pods_MockStaticUITests.framework */; };
 		AE81F7A1DD0569F175B59949 /* Pods_MockStatic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD29DAA607EEA91E5F11681 /* Pods_MockStatic.framework */; };
 		C0225FC76CFC8D27EBE79B0B /* Pods_MockStaticTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4BEEB93CE9A25029759035 /* Pods_MockStaticTests.framework */; };
@@ -58,8 +60,10 @@
 		2B328FC4216D0CA5002B7FE2 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 		2B328FC8216D0F70002B7FE2 /* StaticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticAPI.swift; sourceTree = "<group>"; };
 		2B328FCA216D1049002B7FE2 /* StaticAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticAPIWrapper.swift; sourceTree = "<group>"; };
-		2B328FCC216D10AE002B7FE2 /* WrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapperTests.swift; sourceTree = "<group>"; };
 		2B328FCE216D118C002B7FE2 /* MockStaticAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStaticAPIWrapper.swift; sourceTree = "<group>"; };
+		2B52E06D216D161900DD6E04 /* InjectableAPIWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableAPIWrapper.swift; sourceTree = "<group>"; };
+		2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStaticAPI.swift; sourceTree = "<group>"; };
+		2B52E071216D185200DD6E04 /* InjectableAPIWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableAPIWrapperTests.swift; sourceTree = "<group>"; };
 		2BCA2E5DFE8CB262138EE397 /* Pods-MockStaticTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockStaticTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MockStaticTests/Pods-MockStaticTests.release.xcconfig"; sourceTree = "<group>"; };
 		3E4BEEB93CE9A25029759035 /* Pods_MockStaticTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockStaticTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F1D671F0D3DE3F2E3F63341 /* Pods-MockStaticUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockStaticUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MockStaticUITests/Pods-MockStaticUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				2B328FC7216D0E63002B7FE2 /* App */,
 				2B328FC8216D0F70002B7FE2 /* StaticAPI.swift */,
 				2B328FCA216D1049002B7FE2 /* StaticAPIWrapper.swift */,
+				2B52E06D216D161900DD6E04 /* InjectableAPIWrapper.swift */,
 			);
 			path = MockStatic;
 			sourceTree = "<group>";
@@ -134,8 +139,9 @@
 			children = (
 				2B328FAD216D0AA7002B7FE2 /* Info.plist */,
 				2B328FC4216D0CA5002B7FE2 /* ViewControllerTests.swift */,
-				2B328FCC216D10AE002B7FE2 /* WrapperTests.swift */,
 				2B328FCE216D118C002B7FE2 /* MockStaticAPIWrapper.swift */,
+				2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */,
+				2B52E071216D185200DD6E04 /* InjectableAPIWrapperTests.swift */,
 			);
 			path = MockStaticTests;
 			sourceTree = "<group>";
@@ -421,6 +427,7 @@
 			files = (
 				2B328FC9216D0F70002B7FE2 /* StaticAPI.swift in Sources */,
 				2B328FCB216D1049002B7FE2 /* StaticAPIWrapper.swift in Sources */,
+				2B52E06E216D161900DD6E04 /* InjectableAPIWrapper.swift in Sources */,
 				2B328F99216D0AA6002B7FE2 /* ViewController.swift in Sources */,
 				2B328F97216D0AA6002B7FE2 /* AppDelegate.swift in Sources */,
 			);
@@ -432,7 +439,8 @@
 			files = (
 				2B328FC5216D0CA5002B7FE2 /* ViewControllerTests.swift in Sources */,
 				2B328FCF216D118C002B7FE2 /* MockStaticAPIWrapper.swift in Sources */,
-				2B328FCD216D10AE002B7FE2 /* WrapperTests.swift in Sources */,
+				2B52E070216D16F100DD6E04 /* MockStaticAPI.swift in Sources */,
+				2B52E072216D185200DD6E04 /* InjectableAPIWrapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
