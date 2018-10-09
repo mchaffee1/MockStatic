@@ -35,6 +35,7 @@ need to worry about resolving the dependency.
 - `ViewControllerTests` shows a unit test of an interaction between an application class and a wrapped API
 - `MockStaticAPI` is a mock of an API class containing static methods.  This mock is used in...
 - `InjectableWrapperTests` has a unit test of an interaction between a wrapper type and an API class.
+- `IntegrationTests` is a super simple demonstration of how we can use this pattern to make integration tests more meaningful.
 If the setup went well, tests should run usefully in Xcode.
 
 ### Contributing

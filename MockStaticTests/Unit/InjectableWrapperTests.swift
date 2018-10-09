@@ -9,7 +9,7 @@ class InjectableWrapperTests: QuickSpec {
         var wrapper: InjectableWrapper!
 
         beforeEach {
-            MockStaticAPI.reset()
+            MockStaticAPI.resetMock()
             wrapper = InjectableWrapper(staticAPIClass: MockStaticAPI.self)
         }
 

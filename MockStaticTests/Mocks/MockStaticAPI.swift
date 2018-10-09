@@ -20,7 +20,7 @@ class MockStaticAPI: StaticAPIType {
     // because these variables are static, we need to return them to their
     // original values after each test, where in a better world we'd just be
     // instantiating a new mock
-    static func reset() {
+    static func resetMock() {
         Class.mockGetStuffResult = Class.defaultResult
         Class.getStuffCallCount = 0
     }
