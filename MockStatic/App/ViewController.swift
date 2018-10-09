@@ -1,25 +1,16 @@
-//
-//  ViewController.swift
-//  MockStatic
-//
-//  Created by Michael Chaffee on 10/9/18.
-//  Copyright © 2018 chaf.io. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
+    var staticAPIWrapper: StaticAPIWrapperType?
+
+    var labelText = ""
+
+    static func create() -> ViewController {
+        return ViewController(nibName: "Main", bundle: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        labelText = staticAPIWrapper?.getStuff() ?? "no wrapper"
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
-

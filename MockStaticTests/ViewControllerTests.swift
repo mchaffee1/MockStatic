@@ -6,8 +6,20 @@ import Nimble
 
 class ViewControllerTests: QuickSpec {
     override func spec() {
-        it("does a thing we are hoping it does") {
-            
+        var mockWrapper: MockStaticAPIWrapper!
+        var viewController: ViewController!
+
+        beforeEach {
+            mockWrapper = MockStaticAPIWrapper()
+            viewController = ViewController.create()
+            viewController.staticAPIWrapper = mockWrapper
+        }
+
+        it("puts wrapper getStuff() result in its labelText") {
+            viewController.viewDidLoad()
+
+            expect(mockWrapper.getStuffCallCount) == 1
+            expect(viewController.labelText) == mockWrapper.mockGetStuffResult
         }
     }
 }
