@@ -114,12 +114,7 @@
 		2B328F95216D0AA6002B7FE2 /* MockStatic */ = {
 			isa = PBXGroup;
 			children = (
-				2B328F96216D0AA6002B7FE2 /* AppDelegate.swift */,
-				2B328F9D216D0AA7002B7FE2 /* Assets.xcassets */,
-				2B328FA2216D0AA7002B7FE2 /* Info.plist */,
-				2B328F9F216D0AA7002B7FE2 /* LaunchScreen.storyboard */,
-				2B328F9A216D0AA6002B7FE2 /* Main.storyboard */,
-				2B328F98216D0AA6002B7FE2 /* ViewController.swift */,
+				2B328FC7216D0E63002B7FE2 /* App */,
 			);
 			path = MockStatic;
 			sourceTree = "<group>";
@@ -140,6 +135,19 @@
 				2B328FB6216D0AA7002B7FE2 /* MockStaticUITests.swift */,
 			);
 			path = MockStaticUITests;
+			sourceTree = "<group>";
+		};
+		2B328FC7216D0E63002B7FE2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2B328F96216D0AA6002B7FE2 /* AppDelegate.swift */,
+				2B328F9D216D0AA7002B7FE2 /* Assets.xcassets */,
+				2B328FA2216D0AA7002B7FE2 /* Info.plist */,
+				2B328F9F216D0AA7002B7FE2 /* LaunchScreen.storyboard */,
+				2B328F9A216D0AA6002B7FE2 /* Main.storyboard */,
+				2B328F98216D0AA6002B7FE2 /* ViewController.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		4C23AD8651150CBF840CCE0E /* Frameworks */ = {
@@ -578,7 +586,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7TG4MJ93Z;
-				INFOPLIST_FILE = MockStatic/Info.plist;
+				INFOPLIST_FILE = MockStatic/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -597,7 +605,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H7TG4MJ93Z;
-				INFOPLIST_FILE = MockStatic/Info.plist;
+				INFOPLIST_FILE = MockStatic/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
