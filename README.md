@@ -16,7 +16,7 @@ possible integration test will run all the way out to a mocked static call.
 
 ### Setup
 0. You already have Xcode installed, right?  :)  This project is currently being maintained with Xcode 9.4.1.
-1. Make sure you have bundler installed
+1. Make sure you have [bundler](https://bundler.io/) installed
 2. In the repo root, run `setup.sh`
 3. Open `MockStatic.xcworkspace` in Xcode and have fun
 The application should absolutely compile and run, but it does exactly nothing.  The code and tests should tell the whole story.
