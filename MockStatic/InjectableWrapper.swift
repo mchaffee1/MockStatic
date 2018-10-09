@@ -10,7 +10,7 @@ protocol StaticAPIType {
 extension StaticAPI: StaticAPIType {}
 
 // Now, let's create an injectable wrapper!
-struct InjectableAPIWrapper {
+struct InjectableWrapper {
     private var API: StaticAPIType.Type
 
     init(staticAPIClass: StaticAPIType.Type = StaticAPI.self) {

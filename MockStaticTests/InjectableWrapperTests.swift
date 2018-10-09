@@ -4,13 +4,13 @@ import Nimble
 
 @testable import MockStatic
 
-class InjectableAPIWrapperTests: QuickSpec {
+class InjectableWrapperTests: QuickSpec {
     override func spec() {
-        var wrapper: InjectableAPIWrapper!
+        var wrapper: InjectableWrapper!
 
         beforeEach {
             MockStaticAPI.reset()
-            wrapper = InjectableAPIWrapper(staticAPIClass: MockStaticAPI.self)
+            wrapper = InjectableWrapper(staticAPIClass: MockStaticAPI.self)
         }
 
         // This test checks that the wrapper calls the API once and only once,

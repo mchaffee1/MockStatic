@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     // obviously your wrappers really belong in an interactor... #🐍ftw
-    var staticAPIWrapper: StaticAPIWrapperType?
+    var wrapper: WrapperType?
 
     var labelText = ""
 
@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     // synchronous like this, we'd offload the request to a background thread
     // and then bring the result back to main...
     private func loadLabelText() {
-        labelText = staticAPIWrapper?.getStuff() ?? "no wrapper"
+        labelText = wrapper?.getStuff() ?? "no wrapper"
     }
 
     // just a helper to keep the nib/bundle info in the class

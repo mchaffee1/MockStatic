@@ -6,14 +6,14 @@ import Nimble
 
 class ViewControllerTests: QuickSpec {
     override func spec() {
-        var mockWrapper: MockStaticAPIWrapper!
+        var mockWrapper: MockWrapper!
         var viewController: ViewController!
 
         // Instantiate a mock wrapper and inject it into viewController
         beforeEach {
-            mockWrapper = MockStaticAPIWrapper()
+            mockWrapper = MockWrapper()
             viewController = ViewController.create()
-            viewController.staticAPIWrapper = mockWrapper
+            viewController.wrapper = mockWrapper
         }
 
         // IRL we wouldn't have an API call coming straight out of the
