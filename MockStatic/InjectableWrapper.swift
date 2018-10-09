@@ -11,12 +11,14 @@ extension StaticAPI: StaticAPIType {}
 
 // Now, let's create an injectable wrapper!
 struct InjectableWrapper {
-    private var API: StaticAPIType.Type
+    fileprivate var API: StaticAPIType.Type
 
     init(staticAPIClass: StaticAPIType.Type = StaticAPI.self) {
         API = staticAPIClass
     }
+}
 
+extension InjectableWrapper: WrapperType {
     func getStuff() -> String {
         return API.getStuff()
     }

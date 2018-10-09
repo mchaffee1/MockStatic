@@ -137,11 +137,8 @@
 		2B328FAA216D0AA7002B7FE2 /* MockStaticTests */ = {
 			isa = PBXGroup;
 			children = (
+				2B42D128216D31E4008037BE /* Unit */,
 				2B328FAD216D0AA7002B7FE2 /* Info.plist */,
-				2B328FC4216D0CA5002B7FE2 /* ViewControllerTests.swift */,
-				2B328FCE216D118C002B7FE2 /* MockWrapper.swift */,
-				2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */,
-				2B52E071216D185200DD6E04 /* InjectableWrapperTests.swift */,
 			);
 			path = MockStaticTests;
 			sourceTree = "<group>";
@@ -166,6 +163,17 @@
 				2B328F98216D0AA6002B7FE2 /* ViewController.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		2B42D128216D31E4008037BE /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				2B328FC4216D0CA5002B7FE2 /* ViewControllerTests.swift */,
+				2B328FCE216D118C002B7FE2 /* MockWrapper.swift */,
+				2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */,
+				2B52E071216D185200DD6E04 /* InjectableWrapperTests.swift */,
+			);
+			path = Unit;
 			sourceTree = "<group>";
 		};
 		4C23AD8651150CBF840CCE0E /* Frameworks */ = {
