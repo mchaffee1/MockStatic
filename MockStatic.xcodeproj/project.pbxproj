@@ -18,6 +18,9 @@
 		2B328FCB216D1049002B7FE2 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B328FCA216D1049002B7FE2 /* Wrapper.swift */; };
 		2B328FCF216D118C002B7FE2 /* MockWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B328FCE216D118C002B7FE2 /* MockWrapper.swift */; };
 		2B42D12C216D4226008037BE /* IntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42D12B216D4226008037BE /* IntegrationTests.swift */; };
+		2B42D12E216E5766008037BE /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42D12D216E5766008037BE /* DependencyInjector.swift */; };
+		2B42D130216E5789008037BE /* DependencyInjectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42D12F216E5789008037BE /* DependencyInjectorTests.swift */; };
+		2B42D132216E57D1008037BE /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B42D131216E57D1008037BE /* MockViewController.swift */; };
 		2B52E06E216D161900DD6E04 /* InjectableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52E06D216D161900DD6E04 /* InjectableWrapper.swift */; };
 		2B52E070216D16F100DD6E04 /* MockStaticAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */; };
 		2B52E072216D185200DD6E04 /* InjectableWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B52E071216D185200DD6E04 /* InjectableWrapperTests.swift */; };
@@ -63,6 +66,9 @@
 		2B328FCA216D1049002B7FE2 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		2B328FCE216D118C002B7FE2 /* MockWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWrapper.swift; sourceTree = "<group>"; };
 		2B42D12B216D4226008037BE /* IntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTests.swift; sourceTree = "<group>"; };
+		2B42D12D216E5766008037BE /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DependencyInjector.swift; path = MockStatic/DependencyInjector.swift; sourceTree = SOURCE_ROOT; };
+		2B42D12F216E5789008037BE /* DependencyInjectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectorTests.swift; sourceTree = "<group>"; };
+		2B42D131216E57D1008037BE /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
 		2B52E06D216D161900DD6E04 /* InjectableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableWrapper.swift; sourceTree = "<group>"; };
 		2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStaticAPI.swift; sourceTree = "<group>"; };
 		2B52E071216D185200DD6E04 /* InjectableWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableWrapperTests.swift; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 				2B328F9F216D0AA7002B7FE2 /* LaunchScreen.storyboard */,
 				2B328F9A216D0AA6002B7FE2 /* Main.storyboard */,
 				2B328F98216D0AA6002B7FE2 /* ViewController.swift */,
+				2B42D12D216E5766008037BE /* DependencyInjector.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 			children = (
 				2B328FC4216D0CA5002B7FE2 /* ViewControllerTests.swift */,
 				2B52E071216D185200DD6E04 /* InjectableWrapperTests.swift */,
+				2B42D12F216E5789008037BE /* DependencyInjectorTests.swift */,
 			);
 			path = Unit;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			children = (
 				2B328FCE216D118C002B7FE2 /* MockWrapper.swift */,
 				2B52E06F216D16F100DD6E04 /* MockStaticAPI.swift */,
+				2B42D131216E57D1008037BE /* MockViewController.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -456,6 +465,7 @@
 				2B328FCB216D1049002B7FE2 /* Wrapper.swift in Sources */,
 				2B52E06E216D161900DD6E04 /* InjectableWrapper.swift in Sources */,
 				2B328F99216D0AA6002B7FE2 /* ViewController.swift in Sources */,
+				2B42D12E216E5766008037BE /* DependencyInjector.swift in Sources */,
 				2B328F97216D0AA6002B7FE2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,7 +477,9 @@
 				2B328FC5216D0CA5002B7FE2 /* ViewControllerTests.swift in Sources */,
 				2B328FCF216D118C002B7FE2 /* MockWrapper.swift in Sources */,
 				2B42D12C216D4226008037BE /* IntegrationTests.swift in Sources */,
+				2B42D132216E57D1008037BE /* MockViewController.swift in Sources */,
 				2B52E070216D16F100DD6E04 /* MockStaticAPI.swift in Sources */,
+				2B42D130216E5789008037BE /* DependencyInjectorTests.swift in Sources */,
 				2B52E072216D185200DD6E04 /* InjectableWrapperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

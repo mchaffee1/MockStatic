@@ -33,6 +33,8 @@ testing of the types that consume the API, but it still has a hardcoded dependen
 which is then stored in the instance variable `API`.  This parameter is defaulted to `StaticAPI` so application code doesn't
 need to worry about resolving the dependency.
   - `InjectableWrapper` is then extended to add `WrapperType` conformance through the implementation of `getStuff()`
+- `DependencyInjector` shows how application code (dependency injectors, wireframes, etc) need have no awareness of the
+`staticAPIClass` parameter on the InjectableWrapper type.
 - `ViewControllerTests` shows a unit test of an interaction between an application class and a wrapped API
 - `MockStaticAPI` is a mock of an API class containing static methods.  This mock is used in...
 - `InjectableWrapperTests` has a unit test of an interaction between a wrapper type and an API class.

@@ -1,5 +1,10 @@
 import UIKit
 
+protocol ViewControllerType: class {
+    var wrapper: WrapperType? { get set }
+    var labelText: String { get set }
+}
+
 class ViewController: UIViewController {
     // obviously your wrappers really belong in an interactor... #🐍ftw
     var wrapper: WrapperType?
