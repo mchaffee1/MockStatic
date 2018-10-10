@@ -24,9 +24,10 @@ The application should absolutely compile and run, but it does exactly nothing. 
 
 ### What's it do?
 - `StaticAPI` simulates a library (or Cocoa) class which contains needed static methods
-- `Wrapper` is a dumb wrapper type which uses instance methods to call the `StaticAPI` methods.  This pattern enables unit
-testing of the types that consume the API, but it still has a hardcoded dependency to the API class.
-- `InjectableWrapper.swift` contains a couple of things:
+- `Wrapper` is a dumb wrapper type which uses instance methods to call the `StaticAPI` methods.
+This pattern enables unit testing of the types that consume the API, but it still has a hardcoded dependency to the API class.
+The class is only included as an illustration of the "dumb wrapper" pattern without static-dependency injection.
+- `InjectableWrapper.swift` replaces Wrapper and contains a couple of things:
   - `StaticAPIType` is a protocol declaration containing the static methods from `StaticAPI` which we wish to mock.  
   - `StaticAPI` conformance to `StaticAPIType` is declared next.  The conformance block here should always be empty.
   - `InjectableWrapper` has a constructor which receives a type identifier for a `StaticAPIType`-conformant type, 
