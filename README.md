@@ -14,6 +14,15 @@ then we need tests.
 More often and almost as importantly, a good e2e or integration test might end with a static call.  In that case, the best 
 possible integration test will run all the way out to a mocked static call.
 
+The solution illustrated here works like this:
+1. We declare a protocol describing the static methods used in the API class
+2. We create a wrapper type which exposes the API protocol's static methods through instance methods
+3. We create a wrapper-type implementation which holds the identity of the API class in a private instance property
+4. We give the wrapper an initializer which has an optional parameter for the API class identity (which defaults to the
+production API class)
+5. We create a mock type which conforms to the static-API protocol
+6. We can then write tests which interact with the mock static methods
+
 ### Setup
 0. You already have Xcode installed, right?  :)  This project is currently being maintained with Xcode 9.4.1.
 1. Make sure you have [bundler](https://bundler.io/) installed
